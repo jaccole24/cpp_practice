@@ -10,7 +10,7 @@ Employee::Employee(int age, int years, int salary) {
 }
 
 int main() {
-	system("CLS");
+	system("clear");
 	using namespace std;
 
 	Employee Nichole(29, 3, 45000);
