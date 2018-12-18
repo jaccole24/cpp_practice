@@ -1,7 +1,7 @@
 output: main.o
 	g++ main.o -o output
 
-main.o: main.cpp
+main.o: main.cpp Rectangle.h
 	g++ -c main.cpp
 
 clean:

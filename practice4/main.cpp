@@ -2,16 +2,15 @@
 // Jacob Cole
 // 15 December 2018
 
-#include <iostream>
-typedef unsigned short int uint16;
+#include "Rectangle.h"
 
 int main()	{
-	using namespace std;
-	uint16 myAge;
-	uint16 * pAge = 0;
-
-	myAge = 23;
-	cout << "myAge: " << myAge << endl;
-	pAge = &myAge;
-	cout << "*pAge: " << *pAge << endl << endl;
+	//initialize a rectangle to 30,5
+	Rectangle theRect(30,5);
+	std::cout << "DrawShape():" << std::endl;
+	theRect.DrawShape();
+	std::cout << "DrawShape(22,5):" << std::endl;
+	theRect.DrawShape(22,5);
+	return 0;
 }
+
